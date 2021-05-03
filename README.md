@@ -1,4 +1,4 @@
-# On the Convolution Efficiency for probabilistic analysis of real-time systems
+# Artifact Evaluation - On the Convolution Efficiency for probabilistic analysis of real-time systems
 
 This directory contatins the MATLAB scripts and functions that were used for implementing
 the contributions and evaluation from our paper accepted at ECRTS 2021, titled

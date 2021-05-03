@@ -6,7 +6,7 @@ the contributions and evaluation from our paper accepted at ECRTS 2021, titled
 
 =======================================
 
-PREREQUISITES: 
+##PREREQUISITES: 
 
 - Matlab version R2020b and above
 - Advanpix toolbox
@@ -22,7 +22,7 @@ https://www.advanpix.com/documentation/users-manual/
 
 =======================================
 
-FIRST RUN:
+##FIRST RUN:
 
 Before running any script, first import "ARTIFACT Paper 13" to Matlab, and
 then righ-click on the directory named "ARTIFACT Paper 13". From the given
@@ -30,7 +30,7 @@ options, select "Add to path" ---> "Selected Folders and Subfolders".
 
 =======================================
 
-RERUNING THE EXPERIMENTS:
+##RERUNING THE EXPERIMENTS:
 
 Experiments are available in directory "On the Convolution Efficiency/experiments".
 There are three subdirectories, for each experiment from the paper 
@@ -42,7 +42,7 @@ the experiment results.
 
 =======================================
 
-STRUCTURE OF THE ARTIFACT:
+##STRUCTURE OF THE ARTIFACT:
 
 The parent directory "On the Convolution Efficiency" contains the following sub-directories:
 
@@ -72,7 +72,7 @@ The parent directory "On the Convolution Efficiency" contains the following sub-
 
 =======================================
 
-UNIT TESTING
+##UNIT TESTING
 
 Unit testing scripts are presented within each module individualy, starting with prefix "test_...".
 

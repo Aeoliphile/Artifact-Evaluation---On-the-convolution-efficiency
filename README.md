@@ -59,7 +59,10 @@ The parent directory "On the Convolution Efficiency" contains the following sub-
 
 - taskset-generation: placeholder for functions that generate evaluated tasksets
 
-UNIT TESTING SCRIPTS are presented within each module individualy, starting with prefix "test_...".
+UNIT TESTING
+
+Unit testing scripts are presented within each module individualy, starting with prefix "test_...".
+
 
 Note: If you want to see the documentation of the provided functions, right-click on it
       and then choose the option "Help on <<function name>>".

@@ -3,9 +3,13 @@ function [X_n] = cconv(X,n)
 % X is a vector, representing random variable (indexes represent values, 
 %   while probabilities are the array elements)
 % n is a number of convolutions/summations of X
+%
 % ADDITIONAL INFO: Code follows the structure of Algorihtm 3 in our paper,
 % but does not include Improvements 1 and 2 from the paper. The
-% improvements must be implemented on top of this code structure
+% improvements must be implemented on top of this code structure. Also, the
+% code is based on the fast circular convolution, contributed by Stephen
+% McGovern, available at:
+% https://www.mathworks.com/matlabcentral/fileexchange/5110-fast-convolution
 X = mp(X);
 Ly = n*length(X); %-1;
 Ly2 = pow2(nextpow2(Ly));    % Find smallest power of 2 that is > Ly

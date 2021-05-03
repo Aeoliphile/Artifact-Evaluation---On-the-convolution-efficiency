@@ -10,7 +10,7 @@ avgExpectation = zeros(1,5); % collection for the average deadline miss probabil
 avgExceedence = zeros(1,5);
 
 %%%%%% IMPORTANT %%%%%%
-NoOfRuns = 1000; 
+NoOfRuns = 10; 
 % If on your machine it takes too long to perform this script, reduce the above number
 % It represents a number of runs per each point in the graph.
 % Reducing this number increases the standard deviation of the results.

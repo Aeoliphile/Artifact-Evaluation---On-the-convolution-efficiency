@@ -4,22 +4,31 @@ This directory contatins the MATLAB scripts and functions that were used for imp
 the contributions and evaluation from our paper accepted at ECRTS 2021, titled
 "On the Convolution Efficiency for ProbabilisticAnalysis of Real-Time Systems".
 
+=======================================
+
 PREREQUISITES: 
 
 - Matlab version R2020b and above
 - Advanpix toolbox
 
 To run the functions, you need to install ADVANPIX toolbox and add it in your Matlab path.
+
 Here is the download instructions page for Advanpix:
 https://www.advanpix.com/download/
+
 Here is the user manual page for Advanpix:
 https://www.advanpix.com/documentation/users-manual/
+
+
+=======================================
 
 FIRST RUN:
 
 Before running any script, first import "ARTIFACT Paper 13" to Matlab, and
 then righ-click on the directory named "ARTIFACT Paper 13". From the given
 options, select "Add to path" ---> "Selected Folders and Subfolders".
+
+=======================================
 
 RERUNING THE EXPERIMENTS:
 
@@ -30,6 +39,8 @@ Run, one by one, the following scripts
 "downsampling.m", "linearVScircular.m", and "deadlinemissProb.m".
 After finishing, the three subdirectories will be filled with images that represent
 the experiment results.
+
+=======================================
 
 STRUCTURE OF THE ARTIFACT:
 
@@ -59,10 +70,13 @@ The parent directory "On the Convolution Efficiency" contains the following sub-
 
 - taskset-generation: placeholder for functions that generate evaluated tasksets
 
+=======================================
+
 UNIT TESTING
 
 Unit testing scripts are presented within each module individualy, starting with prefix "test_...".
 
+=======================================
 
 Note: If you want to see the documentation of the provided functions, right-click on it
       and then choose the option "Help on <<function name>>".

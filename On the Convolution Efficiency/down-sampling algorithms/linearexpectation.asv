@@ -1,0 +1,20 @@
+function X_prim = linearexpectation(X,s)
+%LINEAREXPECTATION Summary of this function goes here
+%   Detailed explanation goes here
+
+E_un = expectationofrandomvariable(X);
+e_delta = E_un/s;
+ImX_prim = [];
+E_n = 0;
+for l = 1:length(X)
+    e = e + l * X(2,l);
+    E_un = E_un - l * X(2,l);
+    if e >= e_delta
+        ImX_prim(length(ImX_prim)+1) = l;
+        e_delta = E_un/s;
+        e = 0;
+        E_n = E_n + (e - e_delta);
+        s = s - 1;
+    end
+end
+

@@ -22,13 +22,13 @@ https://www.advanpix.com/documentation/users-manual/
 ## FIRST RUN:
 
 Before running any script, first import "On the Convoultion Efficiency" directory to Matlab, and
-then righ-click on the directory within Matlab' **Current folder** view. From the given
-options, select **Add to path** ---> **Selected Folders and Subfolders**.
+then righ-click on the directory within . From the given
+options, select "Add to path" ---> "Selected Folders and Subfolders".
 
 
 ## RERUNING THE EXPERIMENTS:
 
-Experiments are available in directory **On the Convolution Efficiency/experiments**.
+Experiments are available in directory "On the Convolution Efficiency/experiments".
 There are three subdirectories, for each experiment from the paper 
 (available in Sections 5.1, 5.2, and 5.3).
 Run, one by one, the following scripts
@@ -39,7 +39,7 @@ the experiment results.
 
 ## STRUCTURE OF THE ARTIFACT:
 
-The parent directory **On the Convolution Efficiency** contains the following sub-directories:
+The parent directory "On the Convolution Efficiency" contains the following sub-directories:
 
 - **convolution algorithms**: placeholder for circular and linear algorithms that are presented
                           in the paper.

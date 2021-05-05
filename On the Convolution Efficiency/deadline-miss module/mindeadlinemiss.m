@@ -1,7 +1,9 @@
 function [minDMProb] = mindeadlinemiss(i, C, T)
 % Function mindeadlinemiss computes the minimum deadline miss probability
 % using the circular convolution and Equations 2 and 3 from von der Brüggen et al. paper
-% at ECRTS 2018
+% at ECRTS 2018. Also, this function uses Improvements 2 from the paper,
+% removing the initial zero intervals when performing the circular
+% convolutions.
 %   Syntax:
 %      minDmpProb = mindeadlinemiss(i, C, T, V)
 %   Input:
@@ -36,7 +38,7 @@ else
             DM_arrival = 1 - mp(sum(Q(1:intervalForCheckup)));
             % The line above computes only until the accuracy of 1.e-34
             % To increase the accuracy, we can compute the probability of
-            % non-deadline miss, maximise upon this, and at the end just
+            % non-deadline miss, and at the end just
             % return 1 - (prob of nondeadline miss)
             minDMProb = min(minDMProb, DM_arrival);
             

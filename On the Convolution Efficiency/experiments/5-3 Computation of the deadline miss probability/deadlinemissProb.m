@@ -20,7 +20,8 @@ avgTimes = zeros(3,7); % collection for the average execution times for each met
 avgDMPs = zeros(3,7); % collection for the average deadline miss probabilities
 
 %%%%%% IMPORTANT %%%%%%
-NoOfRuns = 20; 
+NoOfRuns = 25; 
+% NoOfRuns = 1000; % Number of runs for the original experiment
 % If on your machine it takes too long to perform this script, reduce the above number
 % It represents a number of runs per each point in the graph.
 % Reducing this number increases the standard deviation of the results.

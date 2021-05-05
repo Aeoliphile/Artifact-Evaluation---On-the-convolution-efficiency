@@ -15,8 +15,14 @@ X = mp(X);
 
 
 marksLC = [2,4,8,16,32,64,128,256];
+% marksLC = [2,4,8,16,32,64,128,256,512]; % Marks for the original experiment
+
 marksCC_BC = [2,4,8,16,32,64,128,256,512,1024,2048,4096];
+% marksCC_BC = [2,4,8,16,32,64,128,256,512,1024,2048,4096,8192]; % Marks for the
+% original experiment
+
 marksCC_WC = marksCC_BC-1;
+
 exec_time_LC = zeros(1,length(marksLC));
 exec_time_CC_BC = zeros(1,length(marksCC_BC));
 exec_time_CC_WC = zeros(1,length(marksCC_WC));
@@ -63,8 +69,14 @@ X = mp(X);
 
 
 marksLC = [2,4,8,16,32];
+% marksLC = [2,4,8,16,32,64]; % Marks for the original experiment
+
 marksCC_BC = [2,4,8,16,32,64,128,256,512,1024,2048];
+% marksCC_BC = [2,4,8,16,32,64,128,256,512,1024,2048,4096]; % Marks for the
+% original experiment
+
 marksCC_WC = marksCC_BC-1;
+
 exec_time_LC = zeros(1,length(marksLC));
 exec_time_CC_BC = zeros(1,length(marksCC_BC));
 exec_time_CC_WC = zeros(1,length(marksCC_WC));
@@ -110,7 +122,13 @@ X = mp(X);
 
 
 marksLC = [2,4];
+% marksLC = [2,4,8]; % Marks for the
+% original experiment
+
 marksCC_BC = [2,4,8,16,32,64,128,256];
+% marksCC_BC = [2,4,8,16,32,64,128,256,512]; % Marks for the
+% original experiment
+
 marksCC_WC = marksCC_BC-1;
 exec_time_LC = zeros(1,length(marksLC));
 exec_time_CC_BC = zeros(1,length(marksCC_BC));

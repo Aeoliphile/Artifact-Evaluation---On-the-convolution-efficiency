@@ -19,10 +19,10 @@ Here is the user manual page for Advanpix:
 https://www.advanpix.com/documentation/users-manual/
 
 
-## FIRST RUN:
+## BEFORE RUNNING THE SCRIPTS:
 
-Before running any script, first import "On the Convoultion Efficiency" directory to Matlab, and
-then righ-click on the directory within Matlab' **Current folder** view. From the given
+Before running any script, first import "On the Convolution Efficiency" directory to Matlab, and
+then righ-click on the directory within Matlab's **Current folder** view. From the given
 options, select **Add to path** ---> **Selected Folders and Subfolders**.
 
 

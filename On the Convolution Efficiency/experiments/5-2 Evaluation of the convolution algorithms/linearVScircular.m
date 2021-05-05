@@ -118,8 +118,7 @@ X = mp(X);
 
 
 marksLC = [2,4];
-% marksLC = [2,4,8]; % Marks for the
-% original experiment
+% marksLC = [2,4,8]; % Marks for the original experiment
 
 marksCC_BC = [2,4,8,16,32,64,128,256];
 % marksCC_BC = [2,4,8,16,32,64,128,256,512]; % Marks for the

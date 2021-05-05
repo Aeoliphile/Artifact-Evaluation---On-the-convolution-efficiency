@@ -46,17 +46,15 @@ for i = 1:length(marksCC_WC)
 end
 
 
-y1 = exec_time_CC_BC;
-y2 = exec_time_CC_WC;
-y3 = exec_time_LC;
-plot(marksCC_BC,y1,'--bo',marksCC_WC,y2,'-rs',marksLC,y3,'-ko','LineWidth',3);
-grid on;
-legend('CC-BC','CC-WC','LC');
-f = gcf;
-exportgraphics(f,[mfilename('fullpath'), '_(a).png']);
+y1_1 = exec_time_CC_BC;
+y1_2 = exec_time_CC_WC;
+y1_3 = exec_time_LC;
+
+x1_1 = marksCC_BC;
+x1_2 = marksCC_WC;
+x1_3 = marksLC;
 
 disp('1/3 of the experiment is done...')
-
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,17 +98,15 @@ for i = 1:length(marksCC_WC)
 end
 
 
-y1 = exec_time_CC_BC;
-y2 = exec_time_CC_WC;
-y3 = exec_time_LC;
-plot(marksCC_BC,y1,'--bo',marksCC_WC,y2,'-rs',marksLC,y3,'-ko','LineWidth',3);
-grid on;
-legend('CC-BC','CC-WC','LC');
-f = gcf;
-exportgraphics(f,[mfilename('fullpath'), '_(b).png']);
+y2_1 = exec_time_CC_BC;
+y2_2 = exec_time_CC_WC;
+y2_3 = exec_time_LC;
+
+x2_1 = marksCC_BC;
+x2_2 = marksCC_WC;
+x2_3 = marksLC;
 
 disp('2/3 of the experiment is done...')
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Experiment represented in Figure 5 (c)
@@ -152,12 +148,43 @@ for i = 1:length(marksCC_WC)
     exec_time_CC_WC(i) = toc;
 end
 
+y3_1 = exec_time_CC_BC;
+y3_2 = exec_time_CC_WC;
+y3_3 = exec_time_LC;
+
+x3_1 = marksCC_BC;
+x3_2 = marksCC_WC;
+x3_3 = marksLC;
+
+disp('3/3 of the experiment is done...Image generation in progress...')
 
 
-y1 = exec_time_CC_BC;
-y2 = exec_time_CC_WC;
-y3 = exec_time_LC;
-plot(marksCC_BC,y1,'--bo',marksCC_WC,y2,'-rs',marksLC,y3,'-ko','LineWidth',3);
+%%%%%%%%%%%%%%%%%%%%
+%%% IMAGE GENERATION
+%%%%%%%%%%%%%%%%%%%%
+
+
+% Generation of image (a)
+
+plot(x1_1,y1_1,'--bo',x1_2,y1_2,'-rs',x1_3,y1_3,'-ko','LineWidth',3);
+grid on;
+legend('CC-BC','CC-WC','LC');
+f = gcf;
+exportgraphics(f,[mfilename('fullpath'), '_(a).png']);
+
+
+% Generation of image (b)
+
+plot(x2_1,y2_1,'--bo',x2_2,y2_2,'-rs',x2_3,y2_3,'-ko','LineWidth',3);
+grid on;
+legend('CC-BC','CC-WC','LC');
+f = gcf;
+exportgraphics(f,[mfilename('fullpath'), '_(b).png']);
+
+
+% Generation of image (c)
+
+plot(x3_1,y3_1,'--bo',x3_2,y3_2,'-rs',x3_3,y3_3,'-ko','LineWidth',3);
 grid on;
 legend('CC-BC','CC-WC','LC');
 f = gcf;
